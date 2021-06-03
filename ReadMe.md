@@ -40,6 +40,8 @@ bash batch_run_value_estimation_4seed_cuda.sh Humanoid-v2 DDPG_value_estimation 
         --env HalfCheetah-v2 \
         -l  DDPG TD3 -s 0
     ```
+    <img src="images/Q-value_estimation.png" width="400px" align="middle"/>
+<br>
 - Example2: plot the reward of DDPG and TD3:
     ```bash
     python spinupUtils/plot_reward.py \
