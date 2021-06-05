@@ -58,10 +58,10 @@ class ValueEstimateReplayBuffer(ReplayBuffer):
 		mjsim_part = [None] * batch_size
 		i = 0
 		while i < batch_size:
-			warpped_state = {}
-			warpped_state["mjsim_state"] = self.mjsim[ind[i]]
-			warpped_state["env_state"] = self.state[ind[i]]
-			mjsim_part[i] = warpped_state
+			wrapped_state = {}
+			wrapped_state["mjsim_state"] = self.mjsim[ind[i]]
+			wrapped_state["env_state"] = self.state[ind[i]]
+			mjsim_part[i] = wrapped_state
 			i += 1
 
 		return (
